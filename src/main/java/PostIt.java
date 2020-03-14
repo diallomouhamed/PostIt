@@ -37,7 +37,10 @@ public class PostIt {
     }
 
     public String getSeniority() {
-        String seniority = null;
-        return seniority;
+        return creationDate.getSeniority(new AppTime());
+    }
+
+    public String toString() {
+        return "[" + getSeniority() + "] " + taskName;
     }
 }
